@@ -1,0 +1,61 @@
+:host{
+    // Page title
+    .page-about-title-wrapper{
+        display: flex;
+        padding: 15px 15px 5px 15px;
+        align-items: center;
+
+        ion-icon {
+            background: border-box #559cf0;
+            border-radius: 6px;
+            padding: 5px;
+        }
+        .page-about-title{
+            padding-inline-start: 15px;
+            color: #121212;
+            font-weight: 600;
+        }
+    }
+
+    // Card
+    ion-card{
+        box-shadow: unset;
+        --background: unset;
+        //Image
+        .pac-image{
+            padding: 10px;
+        }
+        //Card text
+        .pac-text-main{
+            color:#292f44;
+            padding: 0px 0px 0px 10px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        //Card description
+        .pac-text-description{
+            display: flex;
+            color: #2b2c2d;
+
+            ul{
+                list-style: none;
+                padding-inline-start: 10px;
+                width: 100%;
+                li{
+                    display: flex;
+                    padding: 2px;
+                }
+                .list-naming{
+                    font-weight: 600;
+                    width: 33%;
+                }
+                .list-description{
+                    width: 67%;
+                    margin-left: 20px;
+                }
+            } 
+        }
+    }
+    
+
+}

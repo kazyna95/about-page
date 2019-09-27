@@ -1,0 +1,85 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button text=""></ion-back-button>
+        </ion-buttons>
+        <ion-title color="light">
+            Voucher
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+
+    <div class="page-about">
+
+        <!-- Page title -->
+        <div class="page-about-title-wrapper">
+            <div class="pat-icon">
+                <ion-icon name="information-circle-outline"></ion-icon>
+            </div>
+            <div class="page-about-title">
+                <div [innerHTML]="'about.title' | translate"></div>                
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="page-about-content">
+            <ion-card>                
+                <!--Image-->
+                <div class="pac-image">
+                    <img src="./assets/kiosks/about.png">
+                </div>
+                <!--Card text-->
+                <div class="pac-text">
+                    <!--Card main-->
+                    <div class="pac-text-main">
+                        <div [innerHTML]="'kiosk.title' | translate"></div>
+                    </div>
+                    <!---Card description-->
+                    <div class="pac-text-description">
+                        <ul>
+                            <li><span class="list-naming">
+                                    <div [innerHTML]="'about.license' | translate"></div></span><span
+                                    class="list-description">
+                                    <div [innerHTML]="'about.license_number' | translate"></div></span>
+                            </li>
+                            <li><span class="list-naming">
+                                    <div [innerHTML]="'about.letters' | translate"></div>
+                                </span><span class="list-description">
+                                    <div [innerHTML]="'about.post_address' | translate"></div></span></li>
+                            <li><span class="list-naming">
+                                    <div [innerHTML]="'about.office' | translate"></div></span><span
+                                    class="list-description">
+                                    <div [innerHTML]="'about.address' | translate"></div></span></li>
+                            <li><span class="list-naming">
+                                    <div [innerHTML]="'about.customer_care' | translate"></div>
+                                </span><span class="list-description">600-542 521</span></li>
+                            <li><span class="list-naming">
+                                    <div [innerHTML]="'profile.phone' | translate"></div></span><span
+                                    class="list-description">02 445 90 29</span></li>
+                            <li><span class="list-naming">
+                                    <div [innerHTML]="'profile.whatsapp' | translate"></div></span><span
+                                    class="list-description">+971 50 888 37 62</span></li>
+                            <li><span class="list-naming">
+                                    <div [innerHTML]="'about.email' | translate"></div></span><span
+                                    class="list-description"><a
+                                        href="mailto:support@ntpayments.com">support@ntpayments.com</a></span>
+                            </li>
+                            <li><span class="list-naming">
+                                    <div [innerHTML]="'about.social_media' | translate"></div>
+                                </span><span class="list-description"><a
+                                        href="https://facebook.com/ntpayments/">facebook.com/ntpayments/</a></span>
+                            </li>
+                            <li><span class="list-naming">
+                                    <div [innerHTML]="'about.version' | translate"></div>
+                                </span><span class="list-description">2.0</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </ion-card>
+        </div>
+
+    </div>
+
+</ion-content>
